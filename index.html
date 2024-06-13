@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <body>
+        <h1>Controle Financeiro</h1>
+
+            <main>
+                <header>
+                    <div>
+                        <h5>Balanço Total</h5>
+                        <span id="balanco">R$0,00</span>
+                    </div>
+                    <div>
+                        <h5>Entrada</h5>
+                        <span id="rendimento">R$0,00</span>
+                    </div>
+                    <div>
+                        <h5>Despesas</h5>
+                        <span id="despesas">R$0,00</span>
+                    </div>
+                </header>
+
+                <section>
+                    <h3>Transações</h3>
+                    
+                    <ul id="transactionList">
+                        
+                    </ul>
+                    <div id="status"></div>
+                </section>
+
+                <section>
+                    <h3>Add Transação</h3>
+
+                    <form id="transactionForm">
+                        <div>
+                            <label for="name">Nome da Transação </label>
+                            <input type="text" name="name" required />
+                        </div>
+                        <div>
+                            <label for="amount">valor</label>
+                            <input 
+                                type="number" 
+                                name="amount" 
+                                value="0" 
+                                min="0.01" 
+                                step="0.01" 
+                                required 
+                            />
+                        </div>
+                        <div>
+                            <label for="date">Data</label>
+                            <input type="date" name="date" required />
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+            </main>
+            <script src="script.js"></script> 
+    </body>
+
+</html>
